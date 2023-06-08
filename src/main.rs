@@ -2,20 +2,12 @@ use yew::prelude::*;
 
 #[function_component]
 fn App() -> Html {
-    let counter = use_state(|| 0);
-    let onclick = {
-        let counter = counter.clone();
-        move |_| {
-            let value = *counter + 1;
-            counter.set(value);
-        }
-    };
-
-    html! {
-        <div>
-            <button {onclick}>{ "+1" }</button>
-            <p>{ *counter }</p>
-        </div>
+  
+      html! {
+        <div class="flex flex-col justify-center items-center bg-slate-950 ">
+           <h1 class="text-white text-bold " >{"yew rust"}</h1> 
+           <p class="text-white text-bold "> { "Hello, world!" }</p>
+        </div>       
     }
 }
 
