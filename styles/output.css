@@ -526,10 +526,6 @@ video {
   display: flex;
 }
 
-.flex-row {
-  flex-direction: row;
-}
-
 .flex-col {
   flex-direction: column;
 }
@@ -547,9 +543,17 @@ video {
   background-color: rgb(2 6 23 / var(--tw-bg-opacity));
 }
 
-.text-slate-700 {
-  --tw-text-opacity: 1;
-  color: rgb(51 65 85 / var(--tw-text-opacity));
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .text-white {
